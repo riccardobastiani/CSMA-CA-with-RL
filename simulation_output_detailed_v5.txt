@@ -1,0 +1,519 @@
+=== Starting CSMA/CA Simulations with Seeding (10 seeds) ===
+
+[1/6] Running Scalability Experiment...
+Running Scalability Experiment...
+  Nodes: 10
+    Seed 42: Throughput=0.3900, PDR=0.0777
+    Seed 43: Throughput=0.4080, PDR=0.0816
+    Seed 44: Throughput=0.4140, PDR=0.0830
+    Seed 45: Throughput=0.3910, PDR=0.0781
+    Seed 46: Throughput=0.3940, PDR=0.0778
+    Seed 47: Throughput=0.3960, PDR=0.0805
+    Seed 48: Throughput=0.4100, PDR=0.0832
+    Seed 49: Throughput=0.3870, PDR=0.0779
+    Seed 50: Throughput=0.4060, PDR=0.0811
+    Seed 51: Throughput=0.3960, PDR=0.0801
+    Seed 42: Throughput=0.1540, PDR=0.0309
+    Seed 43: Throughput=0.1930, PDR=0.0387
+    Seed 44: Throughput=0.1590, PDR=0.0322
+    Seed 45: Throughput=0.1480, PDR=0.0299
+    Seed 46: Throughput=0.1420, PDR=0.0280
+    Seed 47: Throughput=0.1940, PDR=0.0394
+    Seed 48: Throughput=0.1370, PDR=0.0279
+    Seed 49: Throughput=0.1480, PDR=0.0299
+    Seed 50: Throughput=0.1920, PDR=0.0385
+    Seed 51: Throughput=0.0510, PDR=0.0102
+  Nodes: 50
+    Seed 42: Throughput=0.3520, PDR=0.0140
+    Seed 43: Throughput=0.3550, PDR=0.0142
+    Seed 44: Throughput=0.3630, PDR=0.0147
+    Seed 45: Throughput=0.3570, PDR=0.0144
+    Seed 46: Throughput=0.3620, PDR=0.0145
+    Seed 47: Throughput=0.3600, PDR=0.0145
+    Seed 48: Throughput=0.3620, PDR=0.0146
+    Seed 49: Throughput=0.3660, PDR=0.0146
+    Seed 50: Throughput=0.3390, PDR=0.0136
+    Seed 51: Throughput=0.3550, PDR=0.0142
+    Seed 42: Throughput=0.3210, PDR=0.0129
+    Seed 43: Throughput=0.3240, PDR=0.0130
+    Seed 44: Throughput=0.2980, PDR=0.0120
+    Seed 45: Throughput=0.2860, PDR=0.0115
+    Seed 46: Throughput=0.3230, PDR=0.0129
+    Seed 47: Throughput=0.3230, PDR=0.0129
+    Seed 48: Throughput=0.3040, PDR=0.0121
+    Seed 49: Throughput=0.2900, PDR=0.0116
+    Seed 50: Throughput=0.3180, PDR=0.0127
+    Seed 51: Throughput=0.3290, PDR=0.0132
+  Nodes: 100
+    Seed 42: Throughput=0.3020, PDR=0.0060
+    Seed 43: Throughput=0.3040, PDR=0.0061
+    Seed 44: Throughput=0.3310, PDR=0.0066
+    Seed 45: Throughput=0.3090, PDR=0.0062
+    Seed 46: Throughput=0.3140, PDR=0.0063
+    Seed 47: Throughput=0.2980, PDR=0.0060
+    Seed 48: Throughput=0.3240, PDR=0.0065
+    Seed 49: Throughput=0.3260, PDR=0.0065
+    Seed 50: Throughput=0.3270, PDR=0.0065
+    Seed 51: Throughput=0.3050, PDR=0.0061
+    Seed 42: Throughput=0.3400, PDR=0.0068
+    Seed 43: Throughput=0.3910, PDR=0.0079
+    Seed 44: Throughput=0.3740, PDR=0.0075
+    Seed 45: Throughput=0.3690, PDR=0.0074
+    Seed 46: Throughput=0.3710, PDR=0.0074
+    Seed 47: Throughput=0.3690, PDR=0.0074
+    Seed 48: Throughput=0.3490, PDR=0.0070
+    Seed 49: Throughput=0.3510, PDR=0.0070
+    Seed 50: Throughput=0.3880, PDR=0.0078
+    Seed 51: Throughput=0.3860, PDR=0.0077
+  Nodes: 200
+    Seed 42: Throughput=0.2680, PDR=0.0027
+    Seed 43: Throughput=0.2580, PDR=0.0026
+    Seed 44: Throughput=0.2680, PDR=0.0027
+    Seed 45: Throughput=0.2770, PDR=0.0028
+    Seed 46: Throughput=0.2710, PDR=0.0027
+    Seed 47: Throughput=0.2610, PDR=0.0026
+    Seed 48: Throughput=0.2580, PDR=0.0026
+    Seed 49: Throughput=0.2740, PDR=0.0027
+    Seed 50: Throughput=0.2580, PDR=0.0026
+    Seed 51: Throughput=0.2600, PDR=0.0026
+    Seed 42: Throughput=0.3040, PDR=0.0030
+    Seed 43: Throughput=0.3120, PDR=0.0031
+    Seed 44: Throughput=0.3140, PDR=0.0031
+    Seed 45: Throughput=0.3000, PDR=0.0030
+    Seed 46: Throughput=0.3220, PDR=0.0032
+    Seed 47: Throughput=0.2910, PDR=0.0029
+    Seed 48: Throughput=0.3180, PDR=0.0032
+    Seed 49: Throughput=0.3040, PDR=0.0030
+    Seed 50: Throughput=0.2970, PDR=0.0030
+    Seed 51: Throughput=0.3310, PDR=0.0033
+Saved results to results\scalability_raw.csv
+Saved results to results\scalability_averaged.csv
+Scalability plot saved.
+Scalability PDR plot saved.
+
+[2/6] Running Reward Comparison Experiment...
+Running Reward Comparison Experiment...
+  Testing BEB...
+    Seed 42: Throughput=0.3790, Collision=0.3520
+    Seed 43: Throughput=0.3700, Collision=0.3445
+    Seed 44: Throughput=0.3705, Collision=0.3540
+    Seed 45: Throughput=0.3650, Collision=0.3550
+    Seed 46: Throughput=0.3710, Collision=0.3530
+    Seed 47: Throughput=0.3850, Collision=0.3540
+    Seed 48: Throughput=0.3795, Collision=0.3625
+    Seed 49: Throughput=0.3740, Collision=0.3735
+    Seed 50: Throughput=0.3965, Collision=0.3520
+    Seed 51: Throughput=0.3620, Collision=0.3485
+  Testing RL (Std)...
+    Seed 42: Throughput=0.2935, Collision=0.0845
+    Seed 43: Throughput=0.3090, Collision=0.0970
+    Seed 44: Throughput=0.2815, Collision=0.0785
+    Seed 45: Throughput=0.3300, Collision=0.1020
+    Seed 46: Throughput=0.3130, Collision=0.0970
+    Seed 47: Throughput=0.2915, Collision=0.0910
+    Seed 48: Throughput=0.3080, Collision=0.0960
+    Seed 49: Throughput=0.3130, Collision=0.1085
+    Seed 50: Throughput=0.2875, Collision=0.0730
+    Seed 51: Throughput=0.3060, Collision=0.0880
+  Testing RL (Aggressive)...
+    Seed 42: Throughput=0.2655, Collision=0.0775
+    Seed 43: Throughput=0.2850, Collision=0.0770
+    Seed 44: Throughput=0.2705, Collision=0.0650
+    Seed 45: Throughput=0.3110, Collision=0.0840
+    Seed 46: Throughput=0.2975, Collision=0.0795
+    Seed 47: Throughput=0.2490, Collision=0.0560
+    Seed 48: Throughput=0.2700, Collision=0.0760
+    Seed 49: Throughput=0.2880, Collision=0.0710
+    Seed 50: Throughput=0.2630, Collision=0.0725
+    Seed 51: Throughput=0.2850, Collision=0.0720
+  Testing RL (Throughput)...
+    Seed 42: Throughput=0.3625, Collision=0.1345
+    Seed 43: Throughput=0.3530, Collision=0.1350
+    Seed 44: Throughput=0.2870, Collision=0.0850
+    Seed 45: Throughput=0.3360, Collision=0.1355
+    Seed 46: Throughput=0.3375, Collision=0.1445
+    Seed 47: Throughput=0.3215, Collision=0.1290
+    Seed 48: Throughput=0.3300, Collision=0.1325
+    Seed 49: Throughput=0.3070, Collision=0.1055
+    Seed 50: Throughput=0.3420, Collision=0.1295
+    Seed 51: Throughput=0.3330, Collision=0.1360
+  Testing RL (Balanced)...
+    Seed 42: Throughput=0.2935, Collision=0.0845
+    Seed 43: Throughput=0.3090, Collision=0.0970
+    Seed 44: Throughput=0.2815, Collision=0.0785
+    Seed 45: Throughput=0.3300, Collision=0.1020
+    Seed 46: Throughput=0.3130, Collision=0.0970
+    Seed 47: Throughput=0.2915, Collision=0.0910
+    Seed 48: Throughput=0.3080, Collision=0.0960
+    Seed 49: Throughput=0.3130, Collision=0.1085
+    Seed 50: Throughput=0.2875, Collision=0.0730
+    Seed 51: Throughput=0.3060, Collision=0.0880
+  Testing RL (Low Alpha)...
+    Seed 42: Throughput=0.2735, Collision=0.0880
+    Seed 43: Throughput=0.3100, Collision=0.0970
+    Seed 44: Throughput=0.2815, Collision=0.0785
+    Seed 45: Throughput=0.3300, Collision=0.1020
+    Seed 46: Throughput=0.3155, Collision=0.1005
+    Seed 47: Throughput=0.2825, Collision=0.0860
+    Seed 48: Throughput=0.3080, Collision=0.0960
+    Seed 49: Throughput=0.3095, Collision=0.1070
+    Seed 50: Throughput=0.2875, Collision=0.0730
+    Seed 51: Throughput=0.3060, Collision=0.0880
+  Testing RL (High Alpha)...
+    Seed 42: Throughput=0.3165, Collision=0.0930
+    Seed 43: Throughput=0.3035, Collision=0.0790
+    Seed 44: Throughput=0.3015, Collision=0.1000
+    Seed 45: Throughput=0.3050, Collision=0.0845
+    Seed 46: Throughput=0.3015, Collision=0.0860
+    Seed 47: Throughput=0.3090, Collision=0.1045
+    Seed 48: Throughput=0.2930, Collision=0.0810
+    Seed 49: Throughput=0.3055, Collision=0.0915
+    Seed 50: Throughput=0.3225, Collision=0.1180
+    Seed 51: Throughput=0.3175, Collision=0.1030
+  Testing RL (Low Gamma)...
+    Seed 42: Throughput=0.2990, Collision=0.0855
+    Seed 43: Throughput=0.3350, Collision=0.1060
+    Seed 44: Throughput=0.2805, Collision=0.0790
+    Seed 45: Throughput=0.3260, Collision=0.1010
+    Seed 46: Throughput=0.2815, Collision=0.0920
+    Seed 47: Throughput=0.2710, Collision=0.0735
+    Seed 48: Throughput=0.3240, Collision=0.0925
+    Seed 49: Throughput=0.3270, Collision=0.1120
+    Seed 50: Throughput=0.3165, Collision=0.0900
+    Seed 51: Throughput=0.3070, Collision=0.0990
+  Testing RL (High Gamma)...
+    Seed 42: Throughput=0.2900, Collision=0.0780
+    Seed 43: Throughput=0.3145, Collision=0.0905
+    Seed 44: Throughput=0.3100, Collision=0.0780
+    Seed 45: Throughput=0.3030, Collision=0.0955
+    Seed 46: Throughput=0.2900, Collision=0.0860
+    Seed 47: Throughput=0.3030, Collision=0.0970
+    Seed 48: Throughput=0.3430, Collision=0.1045
+    Seed 49: Throughput=0.3110, Collision=0.1090
+    Seed 50: Throughput=0.3385, Collision=0.1150
+    Seed 51: Throughput=0.3060, Collision=0.0880
+Saved results to results\reward_comparison_raw.csv
+Saved results to results\reward_comparison_averaged.csv
+  BEB Efficiency Score: 0.2421
+  RL (Std) Efficiency Score: 0.2755
+  RL (Aggressive) Efficiency Score: 0.2581
+  RL (Throughput) Efficiency Score: 0.2890
+  RL (Balanced) Efficiency Score: 0.2755
+  RL (Low Alpha) Efficiency Score: 0.2729
+  RL (High Alpha) Efficiency Score: 0.2786
+  RL (Low Gamma) Efficiency Score: 0.2782
+  RL (High Gamma) Efficiency Score: 0.2816
+Reward comparison plot saved.
+
+[3/6] Running Learning Stability Experiment...
+Running Learning Stability Experiment...
+Stability plot saved.
+
+[4/6] Running Retry Comparison Experiment...
+Running Retry Limit Comparison Experiment...
+  Testing BEB...
+    Seed 42: Throughput=0.3790, PDR=0.0108
+    Seed 43: Throughput=0.3700, PDR=0.0106
+    Seed 44: Throughput=0.3705, PDR=0.0106
+    Seed 45: Throughput=0.3650, PDR=0.0104
+    Seed 46: Throughput=0.3710, PDR=0.0106
+    Seed 47: Throughput=0.3850, PDR=0.0110
+    Seed 48: Throughput=0.3795, PDR=0.0108
+    Seed 49: Throughput=0.3740, PDR=0.0106
+    Seed 50: Throughput=0.3965, PDR=0.0113
+    Seed 51: Throughput=0.3620, PDR=0.0104
+  Testing BEB + Retry Limit...
+    Seed 42: Throughput=0.3275, PDR=0.0093
+    Seed 43: Throughput=0.3320, PDR=0.0095
+    Seed 44: Throughput=0.3475, PDR=0.0100
+    Seed 45: Throughput=0.3440, PDR=0.0098
+    Seed 46: Throughput=0.3380, PDR=0.0096
+    Seed 47: Throughput=0.3350, PDR=0.0096
+    Seed 48: Throughput=0.3230, PDR=0.0092
+    Seed 49: Throughput=0.3285, PDR=0.0094
+    Seed 50: Throughput=0.3270, PDR=0.0094
+    Seed 51: Throughput=0.3230, PDR=0.0092
+  Testing RL (Std)...
+    Seed 42: Throughput=0.2935, PDR=0.0084
+    Seed 43: Throughput=0.3090, PDR=0.0089
+    Seed 44: Throughput=0.2815, PDR=0.0081
+    Seed 45: Throughput=0.3300, PDR=0.0094
+    Seed 46: Throughput=0.3130, PDR=0.0089
+    Seed 47: Throughput=0.2915, PDR=0.0083
+    Seed 48: Throughput=0.3080, PDR=0.0088
+    Seed 49: Throughput=0.3130, PDR=0.0089
+    Seed 50: Throughput=0.2875, PDR=0.0082
+    Seed 51: Throughput=0.3060, PDR=0.0087
+  Testing RL + Retry Limit...
+    Seed 42: Throughput=0.2935, PDR=0.0084
+    Seed 43: Throughput=0.3000, PDR=0.0086
+    Seed 44: Throughput=0.2815, PDR=0.0081
+    Seed 45: Throughput=0.3300, PDR=0.0094
+    Seed 46: Throughput=0.3130, PDR=0.0089
+    Seed 47: Throughput=0.2915, PDR=0.0083
+    Seed 48: Throughput=0.3080, PDR=0.0088
+    Seed 49: Throughput=0.3020, PDR=0.0086
+    Seed 50: Throughput=0.2875, PDR=0.0082
+    Seed 51: Throughput=0.3250, PDR=0.0093
+  BEB - Throughput: 0.3753, PDR: 0.0107, Efficiency: 0.2421
+  BEB + Retry Limit - Throughput: 0.3326, PDR: 0.0095, Efficiency: 0.1762
+  RL (Std) - Throughput: 0.3033, PDR: 0.0087, Efficiency: 0.2755
+  RL + Retry Limit - Throughput: 0.3032, PDR: 0.0087, Efficiency: 0.2754
+Retry comparison plot saved.
+
+[5/6] Running Optimized Scalability Experiment...
+Running Optimized Scalability Comparison...
+Comparing: BEB vs Standard RL vs Best RL Configuration
+  Testing with 10 nodes...
+      Seed 42: Throughput=0.4086, Efficiency=0.3303
+      Seed 43: Throughput=0.3862, Efficiency=0.3188
+      Seed 44: Throughput=0.4014, Efficiency=0.3302
+      Seed 45: Throughput=0.3944, Efficiency=0.3259
+      Seed 46: Throughput=0.4008, Efficiency=0.3281
+      Seed 47: Throughput=0.3958, Efficiency=0.3257
+      Seed 48: Throughput=0.4092, Efficiency=0.3369
+      Seed 49: Throughput=0.3972, Efficiency=0.3291
+      Seed 50: Throughput=0.3984, Efficiency=0.3243
+      Seed 51: Throughput=0.3884, Efficiency=0.3166
+    BEB: Throughput=0.3980, PDR=0.0797, Efficiency=0.3266
+      Seed 42: Throughput=0.1264, Efficiency=0.1255
+      Seed 43: Throughput=0.1508, Efficiency=0.1484
+      Seed 44: Throughput=0.1262, Efficiency=0.1250
+      Seed 45: Throughput=0.1612, Efficiency=0.1591
+      Seed 46: Throughput=0.1146, Efficiency=0.1137
+      Seed 47: Throughput=0.2232, Efficiency=0.2184
+      Seed 48: Throughput=0.1386, Efficiency=0.1374
+      Seed 49: Throughput=0.1272, Efficiency=0.1265
+      Seed 50: Throughput=0.2020, Efficiency=0.1975
+      Seed 51: Throughput=0.0614, Efficiency=0.0613
+    RL (Standard eps=0.1): Throughput=0.1432, PDR=0.0288, Efficiency=0.1415
+      Seed 42: Throughput=0.0858, Efficiency=0.0855
+      Seed 43: Throughput=0.0704, Efficiency=0.0701
+      Seed 44: Throughput=0.0804, Efficiency=0.0801
+      Seed 45: Throughput=0.0696, Efficiency=0.0695
+      Seed 46: Throughput=0.0794, Efficiency=0.0791
+      Seed 47: Throughput=0.0828, Efficiency=0.0824
+      Seed 48: Throughput=0.0682, Efficiency=0.0680
+      Seed 49: Throughput=0.0784, Efficiency=0.0782
+      Seed 50: Throughput=0.0738, Efficiency=0.0736
+      Seed 51: Throughput=0.0878, Efficiency=0.0876
+    RL (Optimized): Throughput=0.0777, PDR=0.0156, Efficiency=0.0774
+  Testing with 50 nodes...
+      Seed 42: Throughput=0.3700, Efficiency=0.2441
+      Seed 43: Throughput=0.3798, Efficiency=0.2538
+      Seed 44: Throughput=0.3882, Efficiency=0.2614
+      Seed 45: Throughput=0.3772, Efficiency=0.2557
+      Seed 46: Throughput=0.3746, Efficiency=0.2511
+      Seed 47: Throughput=0.3720, Efficiency=0.2518
+      Seed 48: Throughput=0.3734, Efficiency=0.2470
+      Seed 49: Throughput=0.3796, Efficiency=0.2529
+      Seed 50: Throughput=0.3816, Efficiency=0.2479
+      Seed 51: Throughput=0.3774, Efficiency=0.2516
+    BEB: Throughput=0.3774, PDR=0.0151, Efficiency=0.2517
+      Seed 42: Throughput=0.3264, Efficiency=0.2947
+      Seed 43: Throughput=0.3392, Efficiency=0.3032
+      Seed 44: Throughput=0.3160, Efficiency=0.2858
+      Seed 45: Throughput=0.3120, Efficiency=0.2787
+      Seed 46: Throughput=0.3332, Efficiency=0.2978
+      Seed 47: Throughput=0.3336, Efficiency=0.2938
+      Seed 48: Throughput=0.3154, Efficiency=0.2834
+      Seed 49: Throughput=0.3104, Efficiency=0.2763
+      Seed 50: Throughput=0.3248, Efficiency=0.2923
+      Seed 51: Throughput=0.3024, Efficiency=0.2723
+    RL (Standard eps=0.1): Throughput=0.3213, PDR=0.0129, Efficiency=0.2879
+      Seed 42: Throughput=0.2620, Efficiency=0.2451
+      Seed 43: Throughput=0.2628, Efficiency=0.2475
+      Seed 44: Throughput=0.2680, Efficiency=0.2515
+      Seed 45: Throughput=0.2752, Efficiency=0.2573
+      Seed 46: Throughput=0.2686, Efficiency=0.2523
+      Seed 47: Throughput=0.2678, Efficiency=0.2523
+      Seed 48: Throughput=0.2636, Efficiency=0.2463
+      Seed 49: Throughput=0.2782, Efficiency=0.2604
+      Seed 50: Throughput=0.2794, Efficiency=0.2632
+      Seed 51: Throughput=0.2818, Efficiency=0.2640
+    RL (Optimized): Throughput=0.2707, PDR=0.0108, Efficiency=0.2540
+  Testing with 100 nodes...
+      Seed 42: Throughput=0.3532, Efficiency=0.2107
+      Seed 43: Throughput=0.3480, Efficiency=0.2014
+      Seed 44: Throughput=0.3582, Efficiency=0.2105
+      Seed 45: Throughput=0.3554, Efficiency=0.2074
+      Seed 46: Throughput=0.3534, Efficiency=0.2031
+      Seed 47: Throughput=0.3518, Efficiency=0.2063
+      Seed 48: Throughput=0.3518, Efficiency=0.2078
+      Seed 49: Throughput=0.3506, Efficiency=0.2071
+      Seed 50: Throughput=0.3590, Efficiency=0.2111
+      Seed 51: Throughput=0.3522, Efficiency=0.2074
+    BEB: Throughput=0.3534, PDR=0.0071, Efficiency=0.2073
+      Seed 42: Throughput=0.3630, Efficiency=0.2860
+      Seed 43: Throughput=0.3598, Efficiency=0.2798
+      Seed 44: Throughput=0.3642, Efficiency=0.2826
+      Seed 45: Throughput=0.3662, Efficiency=0.2938
+      Seed 46: Throughput=0.3618, Efficiency=0.2846
+      Seed 47: Throughput=0.3596, Efficiency=0.2767
+      Seed 48: Throughput=0.3498, Efficiency=0.2768
+      Seed 49: Throughput=0.3728, Efficiency=0.2887
+      Seed 50: Throughput=0.3704, Efficiency=0.2948
+      Seed 51: Throughput=0.3804, Efficiency=0.2969
+    RL (Standard eps=0.1): Throughput=0.3648, PDR=0.0073, Efficiency=0.2861
+      Seed 42: Throughput=0.3632, Efficiency=0.2943
+      Seed 43: Throughput=0.3542, Efficiency=0.2924
+      Seed 44: Throughput=0.3526, Efficiency=0.2875
+      Seed 45: Throughput=0.3570, Efficiency=0.2865
+      Seed 46: Throughput=0.3686, Efficiency=0.2952
+      Seed 47: Throughput=0.3694, Efficiency=0.3025
+      Seed 48: Throughput=0.3466, Efficiency=0.2801
+      Seed 49: Throughput=0.3554, Efficiency=0.2901
+      Seed 50: Throughput=0.3584, Efficiency=0.2914
+      Seed 51: Throughput=0.3660, Efficiency=0.2984
+    RL (Optimized): Throughput=0.3591, PDR=0.0072, Efficiency=0.2919
+  Testing with 200 nodes...
+      Seed 42: Throughput=0.3150, Efficiency=0.1540
+      Seed 43: Throughput=0.3046, Efficiency=0.1473
+      Seed 44: Throughput=0.3142, Efficiency=0.1571
+      Seed 45: Throughput=0.3174, Efficiency=0.1545
+      Seed 46: Throughput=0.3094, Efficiency=0.1514
+      Seed 47: Throughput=0.3106, Efficiency=0.1539
+      Seed 48: Throughput=0.3108, Efficiency=0.1507
+      Seed 49: Throughput=0.3122, Efficiency=0.1529
+      Seed 50: Throughput=0.3188, Efficiency=0.1546
+      Seed 51: Throughput=0.3198, Efficiency=0.1552
+    BEB: Throughput=0.3133, PDR=0.0031, Efficiency=0.1532
+      Seed 42: Throughput=0.3288, Efficiency=0.1786
+      Seed 43: Throughput=0.3264, Efficiency=0.1767
+      Seed 44: Throughput=0.3152, Efficiency=0.1703
+      Seed 45: Throughput=0.3198, Efficiency=0.1735
+      Seed 46: Throughput=0.3226, Efficiency=0.1716
+      Seed 47: Throughput=0.3230, Efficiency=0.1689
+      Seed 48: Throughput=0.3332, Efficiency=0.1804
+      Seed 49: Throughput=0.3288, Efficiency=0.1783
+      Seed 50: Throughput=0.3260, Efficiency=0.1782
+      Seed 51: Throughput=0.3342, Efficiency=0.1799
+    RL (Standard eps=0.1): Throughput=0.3258, PDR=0.0033, Efficiency=0.1756
+      Seed 42: Throughput=0.3202, Efficiency=0.1691
+      Seed 43: Throughput=0.3138, Efficiency=0.1580
+      Seed 44: Throughput=0.3144, Efficiency=0.1621
+      Seed 45: Throughput=0.3260, Efficiency=0.1750
+      Seed 46: Throughput=0.3276, Efficiency=0.1756
+      Seed 47: Throughput=0.3384, Efficiency=0.1846
+      Seed 48: Throughput=0.3158, Efficiency=0.1679
+      Seed 49: Throughput=0.3180, Efficiency=0.1661
+      Seed 50: Throughput=0.3270, Efficiency=0.1759
+      Seed 51: Throughput=0.3238, Efficiency=0.1727
+    RL (Optimized): Throughput=0.3225, PDR=0.0032, Efficiency=0.1706
+Saved results to results\optimized_scalability_raw.csv
+Saved results to results\optimized_scalability_averaged.csv
+Optimized scalability plot saved.
+
+=== Performance Summary ===
+
+Nodes: 10
+  BEB                      : Throughput=0.3980, PDR=0.0797, Efficiency=0.3266
+  RL (Standard eps=0.1)    : Throughput=0.1432, PDR=0.0288, Efficiency=0.1415
+  RL (Optimized)           : Throughput=0.0777, PDR=0.0156, Efficiency=0.0774
+
+Nodes: 50
+  BEB                      : Throughput=0.3774, PDR=0.0151, Efficiency=0.2517
+  RL (Standard eps=0.1)    : Throughput=0.3213, PDR=0.0129, Efficiency=0.2879
+  RL (Optimized)           : Throughput=0.2707, PDR=0.0108, Efficiency=0.2540
+
+Nodes: 100
+  BEB                      : Throughput=0.3534, PDR=0.0071, Efficiency=0.2073
+  RL (Standard eps=0.1)    : Throughput=0.3648, PDR=0.0073, Efficiency=0.2861
+  RL (Optimized)           : Throughput=0.3591, PDR=0.0072, Efficiency=0.2919
+
+Nodes: 200
+  BEB                      : Throughput=0.3133, PDR=0.0031, Efficiency=0.1532
+  RL (Standard eps=0.1)    : Throughput=0.3258, PDR=0.0033, Efficiency=0.1756
+  RL (Optimized)           : Throughput=0.3225, PDR=0.0032, Efficiency=0.1706
+
+[6/6] Running Epsilon Comparison Experiment...
+Running Epsilon Comparison Experiment...
+  Testing BEB...
+    Seed 42: Throughput=0.3844, PDR=0.0110
+    Seed 43: Throughput=0.3886, PDR=0.0111
+    Seed 44: Throughput=0.3828, PDR=0.0110
+    Seed 45: Throughput=0.3738, PDR=0.0107
+    Seed 46: Throughput=0.3794, PDR=0.0108
+    Seed 47: Throughput=0.3788, PDR=0.0108
+    Seed 48: Throughput=0.3734, PDR=0.0107
+    Seed 49: Throughput=0.3796, PDR=0.0108
+    Seed 50: Throughput=0.3984, PDR=0.0114
+    Seed 51: Throughput=0.3678, PDR=0.0105
+  Testing RL (eps=0.05)...
+    Seed 42: Throughput=0.3202, PDR=0.0091
+    Seed 43: Throughput=0.3404, PDR=0.0097
+    Seed 44: Throughput=0.3076, PDR=0.0088
+    Seed 45: Throughput=0.3374, PDR=0.0096
+    Seed 46: Throughput=0.3164, PDR=0.0090
+    Seed 47: Throughput=0.3022, PDR=0.0086
+    Seed 48: Throughput=0.3034, PDR=0.0086
+    Seed 49: Throughput=0.3286, PDR=0.0094
+    Seed 50: Throughput=0.3100, PDR=0.0089
+    Seed 51: Throughput=0.3280, PDR=0.0094
+  Testing RL (eps=0.1)...
+    Seed 42: Throughput=0.2920, PDR=0.0083
+    Seed 43: Throughput=0.3190, PDR=0.0091
+    Seed 44: Throughput=0.2988, PDR=0.0085
+    Seed 45: Throughput=0.3306, PDR=0.0095
+    Seed 46: Throughput=0.3158, PDR=0.0090
+    Seed 47: Throughput=0.3088, PDR=0.0088
+    Seed 48: Throughput=0.3024, PDR=0.0086
+    Seed 49: Throughput=0.3056, PDR=0.0087
+    Seed 50: Throughput=0.2816, PDR=0.0080
+    Seed 51: Throughput=0.3198, PDR=0.0091
+  Testing RL (eps=0.3)...
+    Seed 42: Throughput=0.2942, PDR=0.0084
+    Seed 43: Throughput=0.2986, PDR=0.0085
+    Seed 44: Throughput=0.2760, PDR=0.0079
+    Seed 45: Throughput=0.2948, PDR=0.0084
+    Seed 46: Throughput=0.2886, PDR=0.0082
+    Seed 47: Throughput=0.2904, PDR=0.0083
+    Seed 48: Throughput=0.3066, PDR=0.0087
+    Seed 49: Throughput=0.3088, PDR=0.0088
+    Seed 50: Throughput=0.2946, PDR=0.0084
+    Seed 51: Throughput=0.3018, PDR=0.0086
+  Testing RL (eps=0.5)...
+    Seed 42: Throughput=0.2766, PDR=0.0079
+    Seed 43: Throughput=0.2816, PDR=0.0081
+    Seed 44: Throughput=0.2862, PDR=0.0082
+    Seed 45: Throughput=0.2908, PDR=0.0083
+    Seed 46: Throughput=0.2700, PDR=0.0077
+    Seed 47: Throughput=0.2934, PDR=0.0084
+    Seed 48: Throughput=0.2792, PDR=0.0080
+    Seed 49: Throughput=0.2898, PDR=0.0083
+    Seed 50: Throughput=0.2686, PDR=0.0077
+    Seed 51: Throughput=0.2896, PDR=0.0083
+  Testing RL (Decay 0.001)...
+    Seed 42: Throughput=0.2700, PDR=0.0077
+    Seed 43: Throughput=0.2678, PDR=0.0077
+    Seed 44: Throughput=0.2714, PDR=0.0078
+    Seed 45: Throughput=0.2570, PDR=0.0073
+    Seed 46: Throughput=0.2718, PDR=0.0078
+    Seed 47: Throughput=0.2750, PDR=0.0079
+    Seed 48: Throughput=0.2830, PDR=0.0081
+    Seed 49: Throughput=0.2716, PDR=0.0078
+    Seed 50: Throughput=0.2630, PDR=0.0075
+    Seed 51: Throughput=0.2620, PDR=0.0075
+  Testing RL (Decay 0.005)...
+    Seed 42: Throughput=0.2764, PDR=0.0079
+    Seed 43: Throughput=0.2730, PDR=0.0078
+    Seed 44: Throughput=0.2474, PDR=0.0071
+    Seed 45: Throughput=0.2758, PDR=0.0079
+    Seed 46: Throughput=0.2666, PDR=0.0076
+    Seed 47: Throughput=0.2696, PDR=0.0077
+    Seed 48: Throughput=0.2644, PDR=0.0075
+    Seed 49: Throughput=0.2502, PDR=0.0071
+    Seed 50: Throughput=0.2660, PDR=0.0076
+    Seed 51: Throughput=0.2690, PDR=0.0077
+  BEB - Throughput: 0.3807, Efficiency: 0.2545
+  RL (eps=0.05) - Throughput: 0.3194, Efficiency: 0.2862
+  RL (eps=0.1) - Throughput: 0.3074, Efficiency: 0.2793
+  RL (eps=0.3) - Throughput: 0.2954, Efficiency: 0.2717
+  RL (eps=0.5) - Throughput: 0.2826, Efficiency: 0.2629
+  RL (Decay 0.001) - Throughput: 0.2693, Efficiency: 0.2526
+  RL (Decay 0.005) - Throughput: 0.2658, Efficiency: 0.2495
+Epsilon comparison plot saved.
+  Running convergence analysis...
+Epsilon convergence plot saved.
+
+=== All Simulations Completed in 83.69 seconds ===

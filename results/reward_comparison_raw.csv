@@ -1,0 +1,91 @@
+Experiment,Config,Seed,Throughput,CollisionRate,Efficiency
+RewardComparison,BEB,42,0.379,0.352,0.245592
+RewardComparison,BEB,43,0.37,0.3445,0.24253499999999997
+RewardComparison,BEB,44,0.3705,0.354,0.239343
+RewardComparison,BEB,45,0.365,0.355,0.235425
+RewardComparison,BEB,46,0.371,0.353,0.240037
+RewardComparison,BEB,47,0.385,0.354,0.24871000000000001
+RewardComparison,BEB,48,0.3795,0.3625,0.24193125
+RewardComparison,BEB,49,0.374,0.3735,0.23431100000000002
+RewardComparison,BEB,50,0.3965,0.352,0.256932
+RewardComparison,BEB,51,0.362,0.3485,0.23584299999999997
+RewardComparison,RL (Std),42,0.2935,0.0845,0.26869925
+RewardComparison,RL (Std),43,0.309,0.097,0.279027
+RewardComparison,RL (Std),44,0.2815,0.0785,0.25940224999999995
+RewardComparison,RL (Std),45,0.33,0.102,0.29634000000000005
+RewardComparison,RL (Std),46,0.313,0.097,0.28263900000000003
+RewardComparison,RL (Std),47,0.2915,0.091,0.2649735
+RewardComparison,RL (Std),48,0.308,0.096,0.278432
+RewardComparison,RL (Std),49,0.313,0.1085,0.2790395
+RewardComparison,RL (Std),50,0.2875,0.073,0.2665125
+RewardComparison,RL (Std),51,0.306,0.088,0.279072
+RewardComparison,RL (Aggressive),42,0.2655,0.0775,0.24492375
+RewardComparison,RL (Aggressive),43,0.285,0.077,0.263055
+RewardComparison,RL (Aggressive),44,0.2705,0.065,0.2529175
+RewardComparison,RL (Aggressive),45,0.311,0.084,0.284876
+RewardComparison,RL (Aggressive),46,0.2975,0.0795,0.27384875
+RewardComparison,RL (Aggressive),47,0.249,0.056,0.235056
+RewardComparison,RL (Aggressive),48,0.27,0.076,0.24948000000000004
+RewardComparison,RL (Aggressive),49,0.288,0.071,0.267552
+RewardComparison,RL (Aggressive),50,0.263,0.0725,0.2439325
+RewardComparison,RL (Aggressive),51,0.285,0.072,0.26448
+RewardComparison,RL (Throughput),42,0.3625,0.1345,0.31374375
+RewardComparison,RL (Throughput),43,0.353,0.135,0.305345
+RewardComparison,RL (Throughput),44,0.287,0.085,0.262605
+RewardComparison,RL (Throughput),45,0.336,0.1355,0.290472
+RewardComparison,RL (Throughput),46,0.3375,0.1445,0.28873125000000005
+RewardComparison,RL (Throughput),47,0.3215,0.129,0.2800265
+RewardComparison,RL (Throughput),48,0.33,0.1325,0.286275
+RewardComparison,RL (Throughput),49,0.307,0.1055,0.2746115
+RewardComparison,RL (Throughput),50,0.342,0.1295,0.29771100000000006
+RewardComparison,RL (Throughput),51,0.333,0.136,0.287712
+RewardComparison,RL (Balanced),42,0.2935,0.0845,0.26869925
+RewardComparison,RL (Balanced),43,0.309,0.097,0.279027
+RewardComparison,RL (Balanced),44,0.2815,0.0785,0.25940224999999995
+RewardComparison,RL (Balanced),45,0.33,0.102,0.29634000000000005
+RewardComparison,RL (Balanced),46,0.313,0.097,0.28263900000000003
+RewardComparison,RL (Balanced),47,0.2915,0.091,0.2649735
+RewardComparison,RL (Balanced),48,0.308,0.096,0.278432
+RewardComparison,RL (Balanced),49,0.313,0.1085,0.2790395
+RewardComparison,RL (Balanced),50,0.2875,0.073,0.2665125
+RewardComparison,RL (Balanced),51,0.306,0.088,0.279072
+RewardComparison,RL (Low Alpha),42,0.2735,0.088,0.24943200000000001
+RewardComparison,RL (Low Alpha),43,0.31,0.097,0.27993
+RewardComparison,RL (Low Alpha),44,0.2815,0.0785,0.25940224999999995
+RewardComparison,RL (Low Alpha),45,0.33,0.102,0.29634000000000005
+RewardComparison,RL (Low Alpha),46,0.3155,0.1005,0.28379224999999997
+RewardComparison,RL (Low Alpha),47,0.2825,0.086,0.25820499999999996
+RewardComparison,RL (Low Alpha),48,0.308,0.096,0.278432
+RewardComparison,RL (Low Alpha),49,0.3095,0.107,0.2763835
+RewardComparison,RL (Low Alpha),50,0.2875,0.073,0.2665125
+RewardComparison,RL (Low Alpha),51,0.306,0.088,0.279072
+RewardComparison,RL (High Alpha),42,0.3165,0.093,0.28706550000000003
+RewardComparison,RL (High Alpha),43,0.3035,0.079,0.2795235
+RewardComparison,RL (High Alpha),44,0.3015,0.1,0.27135
+RewardComparison,RL (High Alpha),45,0.305,0.0845,0.27922749999999996
+RewardComparison,RL (High Alpha),46,0.3015,0.086,0.275571
+RewardComparison,RL (High Alpha),47,0.309,0.1045,0.2767095
+RewardComparison,RL (High Alpha),48,0.293,0.081,0.269267
+RewardComparison,RL (High Alpha),49,0.3055,0.0915,0.27754675
+RewardComparison,RL (High Alpha),50,0.3225,0.118,0.284445
+RewardComparison,RL (High Alpha),51,0.3175,0.103,0.28479750000000004
+RewardComparison,RL (Low Gamma),42,0.299,0.0855,0.2734355
+RewardComparison,RL (Low Gamma),43,0.335,0.106,0.29949000000000003
+RewardComparison,RL (Low Gamma),44,0.2805,0.079,0.25834050000000003
+RewardComparison,RL (Low Gamma),45,0.326,0.101,0.293074
+RewardComparison,RL (Low Gamma),46,0.2815,0.092,0.255602
+RewardComparison,RL (Low Gamma),47,0.271,0.0735,0.2510815
+RewardComparison,RL (Low Gamma),48,0.324,0.0925,0.29403
+RewardComparison,RL (Low Gamma),49,0.327,0.112,0.290376
+RewardComparison,RL (Low Gamma),50,0.3165,0.09,0.288015
+RewardComparison,RL (Low Gamma),51,0.307,0.099,0.276607
+RewardComparison,RL (High Gamma),42,0.29,0.078,0.26738
+RewardComparison,RL (High Gamma),43,0.3145,0.0905,0.28603775
+RewardComparison,RL (High Gamma),44,0.31,0.078,0.28582
+RewardComparison,RL (High Gamma),45,0.303,0.0955,0.27406349999999996
+RewardComparison,RL (High Gamma),46,0.29,0.086,0.26506
+RewardComparison,RL (High Gamma),47,0.303,0.097,0.273609
+RewardComparison,RL (High Gamma),48,0.343,0.1045,0.3071565
+RewardComparison,RL (High Gamma),49,0.311,0.109,0.277101
+RewardComparison,RL (High Gamma),50,0.3385,0.115,0.2995725
+RewardComparison,RL (High Gamma),51,0.306,0.088,0.279072
