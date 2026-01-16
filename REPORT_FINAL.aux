@@ -1,0 +1,54 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{3}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.0.1}Q-Learning Update Rule}{3}{subsubsection.1.0.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.0.2}Action Selection Policy ($\epsilon $-greedy)}{3}{subsubsection.1.0.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Parameter Optimization and Experimental Analysis}{4}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Exploration Strategy ($\epsilon $)}{4}{subsection.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Convergence Analysis: Throughput and collision rate evolution over time for different epsilon strategies. The decay strategy (green) combines fast initial learning with stable long-term performance.}}{5}{figure.caption.2}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:epsilon_convergence}{{1}{5}{Convergence Analysis: Throughput and collision rate evolution over time for different epsilon strategies. The decay strategy (green) combines fast initial learning with stable long-term performance}{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Reward Function Exploration}{5}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Hyperparameter Sensitivity ($\alpha $ and $\gamma $)}{6}{subsection.2.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Reward structures and hyperparameters: Throughput vs. Collision Rate trade-off (10-seed avg, $N=50$, $p=0.7$)}}{6}{table.caption.3}\protected@file@percent }
+\newlabel{tab:parameter_comparison}{{1}{6}{Reward structures and hyperparameters: Throughput vs. Collision Rate trade-off (10-seed avg, $N=50$, $p=0.7$)}{table.caption.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Retry Limits}{6}{subsection.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Experimental Results and Discussion}{6}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Collision Reduction Analysis}{7}{subsection.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Backoff Window Distribution at Saturation ($N=200$): BEB nodes get stuck at $CW_{max}$, while RL agents maintain a balanced profile.}}{7}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:backoff_distribution}{{2}{7}{Backoff Window Distribution at Saturation ($N=200$): BEB nodes get stuck at $CW_{max}$, while RL agents maintain a balanced profile}{figure.caption.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Scalability Analysis (Realistic Timing): Throughput, PDR, and Collision Rate vs. Network Density. RL (orange/green) consistently outperforms BEB (blue) across all densities due to effective collision avoidance.}}{8}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:scalability}{{3}{8}{Scalability Analysis (Realistic Timing): Throughput, PDR, and Collision Rate vs. Network Density. RL (orange/green) consistently outperforms BEB (blue) across all densities due to effective collision avoidance}{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Throughput Improvement}{8}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Packet Delivery Ratio (PDR) Analysis}{9}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Retry Limit Impact}{9}{subsection.3.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Convergence Analysis with Retry Limits: Throughput and Collision Rate}}{10}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:retry_convergence}{{4}{10}{Convergence Analysis with Retry Limits: Throughput and Collision Rate}{figure.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Retry Limit Impact: Dropped Packet Rate Heatmap}}{10}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:retry_heatmap}{{5}{10}{Retry Limit Impact: Dropped Packet Rate Heatmap}{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Other Observations}{10}{subsection.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusion}{11}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {A}Experimental Data Tables}{12}{appendix.A}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.1}Scalability Experiment Results}{12}{subsection.A.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Scalability experiment results (Realistic Timing): 10-seed average, duration=1s. Note: PDR is low due to high generation rate vs. channel capacity.}}{12}{table.caption.8}\protected@file@percent }
+\newlabel{tab:scalability_data}{{2}{12}{Scalability experiment results (Realistic Timing): 10-seed average, duration=1s. Note: PDR is low due to high generation rate vs. channel capacity}{table.caption.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2}Reward Function Comparison Results}{12}{subsection.A.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Reward function and hyperparameter comparison (10-seed average, $N=50$, $p=0.7$)}}{13}{table.caption.9}\protected@file@percent }
+\newlabel{tab:reward_data}{{3}{13}{Reward function and hyperparameter comparison (10-seed average, $N=50$, $p=0.7$)}{table.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.3}Optimized Scalability Comparison Results}{13}{subsection.A.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Optimized scalability comparison (10-seed average, duration=5000 slots, $p=0.5$)}}{14}{table.caption.10}\protected@file@percent }
+\newlabel{tab:optimized_data}{{4}{14}{Optimized scalability comparison (10-seed average, duration=5000 slots, $p=0.5$)}{table.caption.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.4}Statistical Notes}{14}{subsection.A.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {B}Raw Per-Seed Experimental Data}{16}{appendix.B}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.1}Scalability at N=200: Raw Data}{16}{subsection.B.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Raw per-seed data for scalability at N=200 (10 seeds, duration=5000 slots, $p=0.5$)}}{16}{table.caption.11}\protected@file@percent }
+\newlabel{tab:raw_scalability_200}{{5}{16}{Raw per-seed data for scalability at N=200 (10 seeds, duration=5000 slots, $p=0.5$)}{table.caption.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.2}Reward Function Comparison: Top 3 Configurations}{17}{subsection.B.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Raw per-seed data for top reward configurations (10 seeds, $N=50$, $p=0.7$)}}{18}{table.caption.12}\protected@file@percent }
+\newlabel{tab:raw_reward_top3}{{6}{18}{Raw per-seed data for top reward configurations (10 seeds, $N=50$, $p=0.7$)}{table.caption.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.3}Statistical Validity Analysis}{19}{subsection.B.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Statistical significance tests using paired Student's t-test (degrees of freedom df=9, significance level $\alpha =0.05$)}}{19}{table.caption.13}\protected@file@percent }
+\newlabel{tab:statistical_tests}{{7}{19}{Statistical significance tests using paired Student's t-test (degrees of freedom df=9, significance level $\alpha =0.05$)}{table.caption.13}{}}
+\gdef \@abspage@last{19}

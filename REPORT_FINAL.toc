@@ -1,0 +1,24 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
+\contentsline {subsubsection}{\numberline {1.0.1}Q-Learning Update Rule}{3}{subsubsection.1.0.1}%
+\contentsline {subsubsection}{\numberline {1.0.2}Action Selection Policy ($\epsilon $-greedy)}{3}{subsubsection.1.0.2}%
+\contentsline {section}{\numberline {2}Parameter Optimization and Experimental Analysis}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Exploration Strategy ($\epsilon $)}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Reward Function Exploration}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Hyperparameter Sensitivity ($\alpha $ and $\gamma $)}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Retry Limits}{6}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Experimental Results and Discussion}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Collision Reduction Analysis}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Throughput Improvement}{8}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Packet Delivery Ratio (PDR) Analysis}{9}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Retry Limit Impact}{9}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Other Observations}{10}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Conclusion}{11}{section.4}%
+\contentsline {section}{\numberline {A}Experimental Data Tables}{12}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Scalability Experiment Results}{12}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Reward Function Comparison Results}{12}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Optimized Scalability Comparison Results}{13}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.4}Statistical Notes}{14}{subsection.A.4}%
+\contentsline {section}{\numberline {B}Raw Per-Seed Experimental Data}{16}{appendix.B}%
+\contentsline {subsection}{\numberline {B.1}Scalability at N=200: Raw Data}{16}{subsection.B.1}%
+\contentsline {subsection}{\numberline {B.2}Reward Function Comparison: Top 3 Configurations}{17}{subsection.B.2}%
+\contentsline {subsection}{\numberline {B.3}Statistical Validity Analysis}{19}{subsection.B.3}%
