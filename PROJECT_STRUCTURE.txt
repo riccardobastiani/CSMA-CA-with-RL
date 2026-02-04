@@ -1,0 +1,61 @@
+CSMA_CA Project Structure
+==========================
+
+CSMA_CA/
+├── AutNet_v3.pdf                   # Final report
+├── README.md                       # Project documentation
+├── REALISTIC_TIMING_README.md      # IEEE 802.11 timing documentation
+├── CSMA_CA_workspace.code-workspace # VS Code workspace config
+├── SCALABILITY_COMMANDS.txt        # Commands for running scalability experiments
+│
+├── models.py                       # Core node implementations (BEBNode, RLNode, Retry variants)
+├── simulation.py                   # Abstract slot-based simulation engine
+├── experiments.py                  # Experiment suite (scalability, reward tuning, etc.)
+├── demo.py                         # Interactive Matplotlib visualization
+├── main.py                         # CLI entry point
+├── run_simulations.py              # Batch experiment runner
+│
+├── models_realistic_timing.py      # IEEE 802.11 DCF timing models
+├── simulation_optimized_timing.py  # SlotTime-granularity simulation (20µs, recommended)
+│
+└── results/                        # Generated outputs
+    ├── scalability.png
+    ├── scalability_4plots.png
+    ├── scalability_pdr.png
+    ├── scalability_pdr_mod.png
+    ├── scalability_pdr_compare.png
+    ├── scalability_raw.csv
+    ├── scalability_averaged.csv
+    ├── scalability_epsdecay.png
+    ├── scalability_epsdecay_4plots.png
+    ├── scalability_epsdecay_pdr.png
+    ├── scalability_epsdecay_raw.csv
+    ├── scalability_epsdecay_averaged.csv
+    ├── reward_comparison.png
+    ├── reward_comparison_raw.csv
+    ├── reward_comparison_averaged.csv
+    ├── stability_throughput.png
+    ├── epsilon_comparison.png
+    ├── epsilon_convergence.png
+    ├── retry_comparison.png
+    ├── retry_convergence.png
+    ├── retry_heatmap.png
+    ├── retry_scalability.png
+    ├── backoff_distribution.png
+    ├── optimized_scalability.png
+    ├── optimized_scalability_raw.csv
+    ├── optimized_scalability_averaged.csv
+    ├── optimized_timing_scalability.png
+    ├── optimized_timing_scalability_4plots.png
+    ├── optimized_timing_scalability_pdr.png
+    ├── optimized_timing_scalability_pdr_mod.png
+    ├── optimized_timing_scalability_pdr_compare.png
+    ├── optimized_timing_scalability_raw.csv
+    ├── optimized_timing_scalability_averaged.csv
+    ├── realistic_timing_comparison.png
+    └── load_response/
+        ├── load_response_10.png
+        ├── load_response_50.png
+        ├── load_response_100.png
+        ├── load_response_200.png
+        └── load_response_500.png

@@ -52,13 +52,3 @@ See `REPORT_FINAL.tex` for comprehensive analysis.
 ## Reproducibility
 
 All experiments use seeds 42-51. Raw per-seed data available in `results/*_raw.csv`. Simulation logs preserved in `simulation_output_detailed_v5.txt` and `simulation_output_remaining_v2.txt`.
-
-## Citation
-
-```
-@misc{csma_rl_2024,
-  title={CSMA/CA with Reinforcement Learning: A Performance Analysis},
-  author={Your Name},
-  year={2024}
-}
-```

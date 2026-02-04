@@ -1,0 +1,35 @@
+CSMA_CA – Scalability Commands
+==============================
+
+1) Optimized timing scalability (generates the 4-plot figure)
+-----------------------------------------------------------
+# NOTE: In optimized timing mode, --duration is in SlotTime units (20µs each).
+# So: 50,000 slots = 1.0 second simulated time.
+
+python main.py --experiment optimized_timing_scalability --nodes 10 50 100 200 --seeds 1 --duration 500000 --packet_prob 0.0005
+
+Outputs (in results/):
+- optimized_timing_scalability_4plots.png
+- optimized_timing_scalability.png
+- optimized_timing_scalability_pdr.png
+- optimized_timing_scalability_pdr_mod.png
+- optimized_timing_scalability_pdr_compare.png
+- optimized_timing_scalability_raw.csv
+- optimized_timing_scalability_averaged.csv
+
+Note: 500,000 slots × 20µs = 10.0 seconds simulated time
+      Longer duration is needed for PDR_mod to show packet drops after retries
+
+
+2) Classic / normal scalability (no optimized timing)
+----------------------------------------------------
+# NOTE: This uses the classic slot-based SimulationEngine.
+# In this mode, --duration is the number of abstract slots.
+
+python main.py --experiment scalability --nodes 10 50 100 200 --seeds 1 --duration 200 --packet_prob 0.5
+
+Outputs (in results/):
+- scalability.png
+- scalability_pdr.png
+- scalability_raw.csv
+- scalability_averaged.csv

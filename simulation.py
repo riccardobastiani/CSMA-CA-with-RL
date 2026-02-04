@@ -96,6 +96,7 @@ class SimulationEngine:
         total_success = sum(n.total_success for n in self.nodes)
         total_collisions = sum(n.total_collisions for n in self.nodes) # Note: this counts individual node collisions
         total_dropped = sum(n.total_dropped for n in self.nodes)
+        total_pending = sum(len(n.queue) + (1 if n.current_packet is not None else 0) for n in self.nodes)
 
         self.metrics['throughput'] = self.successful_slots / self.duration
         self.metrics['collision_rate'] = self.collision_slots / self.duration # Slot collision rate
@@ -105,16 +106,10 @@ class SimulationEngine:
         self.metrics['total_success'] = total_success
         self.metrics['total_collisions'] = total_collisions
         self.metrics['total_dropped'] = total_dropped
+        self.metrics['total_pending'] = total_pending
         self.metrics['pdr'] = total_success / total_generated if total_generated > 0 else 0
-        
-        # Jain's Fairness Index
-        # (Sum x_i)^2 / (n * Sum x_i^2) where x_i is throughput of node i
-        throughputs = [n.total_success / self.duration for n in self.nodes]
-        if sum(throughputs) > 0:
-            numerator = sum(throughputs) ** 2
-            denominator = len(self.nodes) * sum(x**2 for x in throughputs)
-            self.metrics['fairness'] = numerator / denominator if denominator > 0 else 0
-        else:
-            self.metrics['fairness'] = 0
+        # PDR_mod-> only count packets that actually finished (success or dropped)
+        total_completed = total_success + total_dropped
+        self.metrics['pdr_mod'] = total_success / total_completed if total_completed > 0 else 0
 
         return self.metrics

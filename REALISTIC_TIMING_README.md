@@ -2,11 +2,11 @@
 
 ## Overview
 
-This document explains the three simulation approaches available in this project, with a focus on the new **realistic timing** models that implement IEEE 802.11 DCF MAC layer timing.
+This document explains the two simulation approaches available in this project, with a focus on the **optimized timing** model that implements IEEE 802.11 DCF MAC layer timing.
 
 ---
 
-## 🎯 Three Simulation Approaches
+## 🎯 Two Simulation Approaches
 
 ### 1. **Original Simulation** (`simulation.py`, `models.py`)
 - **Time Model**: Abstract "slots" with no specific duration
@@ -15,14 +15,7 @@ This document explains the three simulation approaches available in this project
 - **Performance**: Fast (~50k slots in 1-2 seconds)
 - **Best For**: Long simulations, protocol comparison, RL training
 
-### 2. **Realistic Timing** (`simulation_realistic_timing.py`, `models_realistic_timing.py`)
-- **Time Model**: 1 **microsecond (µs)** granularity
-- **Transmissions**: ~12,000µs (12ms) per packet
-- **MAC Timing**: Full IEEE 802.11 DCF (DIFS, SIFS, ACK)
-- **Performance**: Slow (~1M steps = 1 second takes ~60s to simulate)
-- **Best For**: Precise timing analysis, short duration studies
-
-### 3. **Optimized Timing** (`simulation_optimized_timing.py`) ⭐ **Recommended**
+### 2. **Optimized Timing** (`simulation_optimized_timing.py`, `models_realistic_timing.py`) ⭐ **Recommended**
 - **Time Model**: **SlotTime (20µs)** granularity
 - **Transmissions**: 600 slots (12,000µs) per packet
 - **MAC Timing**: Accurate IEEE 802.11 DCF
@@ -201,16 +194,12 @@ Both realistic models use a **hybrid loop approach**:
 
 ---
 
-## 📁 Files Created
+## 📁 Files
 
 | File | Description |
 |------|-------------|
 | `models_realistic_timing.py` | Node/Channel classes with IEEE 802.11 DCF timing |
-| `simulation_realistic_timing.py` | 1µs granularity simulation engine |
 | `simulation_optimized_timing.py` | 20µs granularity (recommended) |
-| `demo_realistic_comparison.py` | Visual comparison tool |
-| `test_performance_comparison.py` | Benchmark all three models |
-| `test_realistic_timing.py` | Detailed comparison script |
 | `REALISTIC_TIMING_README.md` | This document |
 
 ---

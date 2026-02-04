@@ -1,0 +1,36 @@
+# Results and outputs
+results/
+*.png
+*.csv
+
+# VS Code
+*.code-workspace
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Agent/AI
+.agent/
+
+# PDF reports (optional - remove this line if you want to include the report)
+# *.pdf

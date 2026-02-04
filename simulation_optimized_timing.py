@@ -85,7 +85,7 @@ class OptimizedSimulationEngine:
         self.transmitting_nodes = []
         self.transmission_end_slot = None
         
-        print(f"Optimized Simulation Engine Initialized")
+        print("Optimized Simulation Engine Initialized")
         print(f"  Time granularity: {self.slot_duration_us}µs per slot")
         print(f"  DIFS: {self.DIFS_SLOTS} slots ({self.DIFS_SLOTS * self.slot_duration_us}µs)")
         print(f"  SIFS: {self.SIFS_SLOTS} slots ({self.SIFS_SLOTS * self.slot_duration_us}µs)")
@@ -188,12 +188,15 @@ class OptimizedSimulationEngine:
         self._calculate_final_metrics()
         return self.metrics
     
+    #METRICS CALCULATION
+    
     def _calculate_final_metrics(self):
         """Calculate final aggregate metrics"""
         total_generated = sum(n.total_generated for n in self.nodes)
         total_success = sum(n.total_success for n in self.nodes)
         total_collisions = sum(n.total_collisions for n in self.nodes)
         total_dropped = sum(n.total_dropped for n in self.nodes)
+        total_pending = sum(len(n.queue) + (1 if n.current_packet is not None else 0) for n in self.nodes)
         
         duration_sec = (self.duration * self.slot_duration_us) / 1e6
         
@@ -206,20 +209,15 @@ class OptimizedSimulationEngine:
         
         self.metrics['channel_utilization'] = self.busy_slots / self.duration
         self.metrics['pdr'] = total_success / total_generated if total_generated > 0 else 0
+        # PDR_mod -> only count packets that actually finished (success or dropped)
+        total_completed = total_success + total_dropped
+        self.metrics['pdr_mod'] = total_success / total_completed if total_completed > 0 else 0
         
         self.metrics['total_generated'] = total_generated
         self.metrics['total_success'] = total_success
         self.metrics['total_collisions'] = total_collisions
         self.metrics['total_dropped'] = total_dropped
-        
-        # Fairness
-        throughputs = [n.total_success / duration_sec for n in self.nodes]
-        if sum(throughputs) > 0:
-            numerator = sum(throughputs) ** 2
-            denominator = len(self.nodes) * sum(x**2 for x in throughputs)
-            self.metrics['fairness'] = numerator / denominator if denominator > 0 else 0
-        else:
-            self.metrics['fairness'] = 0
+        self.metrics['total_pending'] = total_pending
         
         print("\n" + "="*60)
         print("SIMULATION COMPLETE")
@@ -230,6 +228,8 @@ class OptimizedSimulationEngine:
         print(f"Throughput: {self.metrics['throughput']:.2f} packets/sec")
         print(f"Collision Rate: {self.metrics['collision_rate']:.4f}")
         print(f"Channel Utilization: {self.metrics['channel_utilization']:.4f}")
-        print(f"PDR: {self.metrics['pdr']:.4f}")
-        print(f"Fairness: {self.metrics['fairness']:.4f}")
+        print(f"Total Generated: {self.metrics['total_generated']}")
+        print(f"Total Success: {self.metrics['total_success']}")
+        print(f"PDR: {self.metrics['pdr']:.6e}")
+        print(f"PDR_mod: {self.metrics['pdr_mod']:.6e}")
         print("="*60)

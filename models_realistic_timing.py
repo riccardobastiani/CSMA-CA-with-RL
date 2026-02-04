@@ -1,17 +1,16 @@
 import random
-import math
 
 # IEEE 802.11b DCF Timing Parameters (in microseconds)
 class MACTiming:
     """IEEE 802.11b MAC layer timing constants"""
     SIFS = 10        # Short Inter-Frame Space (µs)
     SLOT_TIME = 20   # Backoff slot duration (µs)
-    DIFS = SIFS + 2 * SLOT_TIME  # 50 µs - DCF Inter-Frame Space
+    DIFS = SIFS + 2 * SLOT_TIME  # 50 µs - DCF IFS
     
-    # Transmission durations (assuming 1 Mbps, 1500 byte packet)
+    # Transmission durations 
     PACKET_SIZE = 1500  # bytes
-    DATA_RATE = 1e6     # 1 Mbps = 1,000,000 bits/s
-    DATA_DURATION = int((PACKET_SIZE * 8) / DATA_RATE * 1e6)  # ~12,000 µs = 12 ms
+    DATA_RATE = 1e6     # 1 Mbps = 
+    DATA_DURATION = int((PACKET_SIZE * 8) / DATA_RATE * 1e6)  # ~12,000 µs
     
     # ACK frame (14 bytes header + 4 bytes FCS at 1 Mbps)
     ACK_SIZE = 14 + 4  # bytes
@@ -20,9 +19,6 @@ class MACTiming:
     # Total successful transmission time
     # DATA + SIFS + ACK
     SUCCESS_DURATION = DATA_DURATION + SIFS + ACK_DURATION  # ~12,154 µs
-    
-    # ACK timeout (SIFS + ACK + some margin)
-    ACK_TIMEOUT = SIFS + ACK_DURATION + 10  # ~164 µs
     
     # Timing in slot units for optimized simulation
     DIFS_SLOTS = int(DIFS / SLOT_TIME)  # 50/20 = 2.5 ≈ 3 slots
@@ -43,7 +39,7 @@ class Channel:
     IDLE = 0
     SUCCESS = 1
     COLLISION = 2
-    TRANSMITTING = 3  # New: ongoing transmission
+    TRANSMITTING = 3  #ongoing transmission
     
     def __init__(self):
         self.status = Channel.IDLE
@@ -72,16 +68,16 @@ class Channel:
             return Channel.IDLE, False
             
         elif num_tx == 1:
-            # Single transmission - will succeed after DATA + SIFS + ACK
+            # Single transmission. succeed after DATA + SIFS + ACK
             self.status = Channel.TRANSMITTING
             self.transmission_end_time = current_time + MACTiming.DATA_DURATION
             self.collision_detected = False
-            # Mark packet transmission start
+            #  transmission start
             transmitting_nodes[0].current_packet.transmission_start_time = current_time
             return Channel.TRANSMITTING, False
             
         else:
-            # Multiple transmissions = COLLISION
+            # Multiple transmissions is a COLLISION
             # In reality, collision detected during preamble/header
             self.status = Channel.COLLISION
             self.transmission_end_time = current_time + MACTiming.DATA_DURATION
@@ -123,7 +119,6 @@ class Node:
     STATE_DIFS_WAIT = 'difs_wait'
     STATE_BACKOFF = 'backoff'
     STATE_TRANSMITTING = 'transmitting'
-    STATE_WAIT_ACK = 'wait_ack'
     
     def __init__(self, node_id, packet_prob, time_granularity_us=1):
         """
@@ -142,7 +137,6 @@ class Node:
         # Timing state (in time_granularity_us units)
         self.backoff_counter = 0
         self.difs_counter = 0
-        self.ack_timeout = 0
         
         # Contention window
         self.cw = 0
@@ -168,7 +162,7 @@ class Node:
         if self.current_packet is None and self.queue:
             self.current_packet = self.queue.pop(0)
             self.state = Node.STATE_DIFS_WAIT
-            # DIFS counter in units of time_granularity_us
+            # DIFS counter in units
             self.difs_counter = int(MACTiming.DIFS / self.time_granularity_us)
             self.init_backoff()
     
@@ -209,12 +203,6 @@ class Node:
                     # Backoff expired, ready to transmit!
                     return True
         
-        elif self.state == Node.STATE_WAIT_ACK:
-            # Waiting for ACK or timeout
-            if current_time >= self.ack_timeout:
-                # ACK timeout - treated as collision
-                self.handle_ack_timeout(current_time)
-        
         return False
     
     def start_transmission(self, current_time):
@@ -225,10 +213,6 @@ class Node:
     def handle_feedback(self, status, current_time):
         """Handle transmission result - implemented by subclasses"""
         raise NotImplementedError
-    
-    def handle_ack_timeout(self, current_time):
-        """Handle ACK timeout as collision"""
-        self.handle_feedback(Channel.COLLISION, current_time)
 
 
 class BEBNode(Node):
@@ -244,7 +228,7 @@ class BEBNode(Node):
         """Set backoff counter in SlotTime units"""
         # Backoff is always in units of SlotTime (20µs)
         backoff_slots = random.randint(0, self.cw - 1)
-        # Convert to time_granularity_us units
+        # Convert to time_granularity_us 
         self.backoff_counter = backoff_slots * int(MACTiming.SLOT_TIME / self.time_granularity_us)
     
     def handle_feedback(self, status, current_time):
