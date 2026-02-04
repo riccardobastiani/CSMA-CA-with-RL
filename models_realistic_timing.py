@@ -1,9 +1,8 @@
 import random
 
-# IEEE 802.11b DCF Timing Parameters (in microseconds)
+# IEEE 802.11b DCF Timing (microseconds)
 class MACTiming:
-    """IEEE 802.11b MAC layer timing constants"""
-    SIFS = 10        # Short Inter-Frame Space (µs)
+    SIFS = 10        # Short Inter-Frame Space
     SLOT_TIME = 20   # Backoff slot duration (µs)
     DIFS = SIFS + 2 * SLOT_TIME  # 50 µs - DCF IFS
     
@@ -34,8 +33,7 @@ class Packet:
 
 
 class Channel:
-    """Enhanced channel with explicit MAC timing states"""
-    # Channel states
+    """Channel with MAC timing states"""
     IDLE = 0
     SUCCESS = 1
     COLLISION = 2
@@ -112,9 +110,7 @@ class Channel:
 
 
 class Node:
-    """Base node class with realistic MAC timing"""
-    
-    # Node states
+    """Base node with MAC timing state machine"""
     STATE_IDLE = 'idle'
     STATE_DIFS_WAIT = 'difs_wait'
     STATE_BACKOFF = 'backoff'
@@ -216,7 +212,7 @@ class Node:
 
 
 class BEBNode(Node):
-    """Binary Exponential Backoff with realistic timing"""
+    """Binary Exponential Backoff"""
     CW_MIN = 4
     CW_MAX = 1024
     
@@ -250,7 +246,7 @@ class BEBNode(Node):
 
 
 class BEBRetryNode(BEBNode):
-    """BEB with retry limit"""
+    """BEB with retry limit (max 7 retries)"""
     MAX_RETRIES = 7
     
     def handle_feedback(self, status, current_time):
@@ -275,7 +271,7 @@ class BEBRetryNode(BEBNode):
 
 
 class RLNode(Node):
-    """Q-Learning node with realistic timing"""
+    """Q-Learning based backoff selection"""
     ACTIONS = [8, 16, 32, 64, 128, 256, 512, 1024]
     
     def __init__(self, node_id, packet_prob, time_granularity_us=1, alpha=0.1, gamma=0.9, epsilon=0.1,
@@ -355,7 +351,7 @@ class RLNode(Node):
 
 
 class RLRetryNode(RLNode):
-    """RL node with retry limit"""
+    """RL with retry limit (max 7 retries)"""
     MAX_RETRIES = 7
     
     def handle_feedback(self, status, current_time):

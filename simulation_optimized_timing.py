@@ -1,13 +1,6 @@
 """
-Optimized Realistic Timing Simulation
-
-Instead of 1µs granularity, this uses SlotTime (20µs) as the basic unit.
-This reduces iterations by 20x while maintaining accurate MAC timing.
-
-Key Changes:
-- Time advances in 20µs chunks (SlotTime)
-- DIFS = 2.5 slots, SIFS = 0.5 slots
-- Transmission duration = 600 slots (12,000µs / 20µs)
+Optimized simulation using SlotTime (20µs) granularity instead of 1µs.
+20x faster while maintaining IEEE 802.11 MAC timing accuracy.
 """
 
 from models_realistic_timing import (
@@ -18,12 +11,7 @@ import numpy as np
 
 
 class OptimizedSimulationEngine:
-    """
-    Time-aware simulation with SlotTime (20µs) granularity.
-    
-    This is 20x faster than 1µs simulation while maintaining
-    accurate MAC layer timing.
-    """
+    """Simulation engine with SlotTime (20µs) granularity."""
     
     def __init__(self, num_nodes, packet_prob, node_type='BEB', 
                  duration=50000, seed=None, **kwargs):

@@ -3,16 +3,6 @@ import os
 from experiments import ExperimentRunner
 
 
-'''
-Scalability Experiment: It tests with 5, 10, 20, and 30 nodes by default.
-This is defined in line 8: default=[5, 10, 20, 30].
-This experiment varies the number of nodes to see how performance degrades as the network gets denser.
-Load Response Experiment: It uses a fixed number of 10 nodes (default in experiments.py)
-but varies the traffic load.
-This experiment tests how the network handles different levels of traffic 
-(Packet Generation Probability: 0.1, 0.3, 0.5, 0.7, 0.9).
-'''
-
 def main():
     parser = argparse.ArgumentParser(description="CSMA/CA RL Simulation")
     parser.add_argument('--experiment', type=str, choices=['scalability', 'optimized_timing_scalability', 'load', 'stability', 'reward', 'retry', 'retry_viz', 'epsilon', 'optimized_scalability', 'all'], default='all', help='Experiment to run')

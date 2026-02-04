@@ -61,18 +61,8 @@ class Node:
     def handle_feedback(self, status):
         raise NotImplementedError
 
-class BEBNode(Node): # Binary Exponentiation Backoff
-
-    '''
-    1. Base Model: 
-BEBNode(Binary Exponential Backoff)
-This class implements the standard CSMA/CA protocol
-It uses a fixed rule to adjust its Contention Window (CW).
-It starts with a minimum window (CW_MIN = 4).
-If a collision occurs, it doubles the window size (up to CW_MAX = 1024) to reduce the chance of colliding again.
-If transmission is successful, it resets the window back to the minimum (CW_MIN).
-It is "reactive" and "memoryless" regarding long-term trends. It simply reacts to the immediate previous outcome (success or collision).
-    '''
+class BEBNode(Node):
+    """Standard Binary Exponential Backoff (IEEE 802.11 DCF)"""
     CW_MIN = 4
     CW_MAX = 1024
 
@@ -118,23 +108,8 @@ class BEBRetryNode(BEBNode):
 
 class RLNode(Node):
     """
-    Improved Model: RLNode
-    
-    This class implements an adaptive agent using Q-Learning.
-    It learns a policy to choose the best CW size based on the current "State".
-    The state is defined as the number of consecutive collisions for the current packet (capped at 5).
-    Instead of just doubling, it can choose any specific window size from the set [8, 16, 32, ..., 1024].
-    
-    Learning (Q-Table):
-    It maintains a table q_table[state][action] representing the expected reward for taking
-    a specific action in a specific state.
-    It gets +10 for success and -10 for collision.
-    After every attempt, it updates the Q-value using the Bellman equation:
-    Q(s,a) <- Q(s,a) + alpha * [R + gamma * max Q(s', a') - Q(s,a)]
-    
-    It is "proactive" and "adaptive".
-    Over time, it learns which window size works best for a given congestion level
-    represented by collision count to maximize long-term rewards.
+    Q-Learning based backoff. State = collision count (0-5), 
+    Action = CW size from [8, 16, 32, ..., 1024].
     """
     ACTIONS = [8, 16, 32, 64, 128, 256, 512, 1024]
     
